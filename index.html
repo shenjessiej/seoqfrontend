@@ -14,6 +14,8 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <link href="css/bootstrap.css" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link href="css/modern-business.css" rel="stylesheet">
 
@@ -27,6 +29,12 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <script src="http://d3js.org/d3.v3.min.js" language="JavaScript"></script>
+    <script src="liquidFillGauge.js" language="JavaScript"></script>
+
+ <style>
+        .liquidFillGaugeText { font-family: Helvetica; font-weight: bold; }
+    </style>
 </head>
 
 <body>
@@ -60,11 +68,12 @@
     </nav>
 
     <!-- Header Carousel -->
-    <header id="topPic">
-        <div class = "container" >
+        <div class = "container" style="margin-top: 50px;">
             <div class="row">
                 <div class = "col-lg-6">
-                    Score
+                    
+<svg id="fillgauge5" width="100%" height="100%" onclick="gauge5.update(NewValue());"></svg>
+
                 </div>
 
                 <div class = "col-lg-6">
@@ -72,7 +81,6 @@
                 </div>
             </div>
         </div>
-    </header>
 
     <!-- Page Content -->
     <div class="container">
@@ -169,6 +177,38 @@
         interval: 5000 //changes the speed
     })
     </script>
+
+
+<script language="JavaScript">
+
+    var config5 = liquidFillGaugeDefaultSettings();
+    config5.circleThickness = 0.1;
+    config5.circleColor = "#6D9EA3";
+    config5.textColor = "#A7DEEB";
+    config5.waveTextColor = "#24606D";
+    config5.waveColor = "#A7DEEB";
+    config5.textVertPosition = 0.52;
+    config5.waveAnimateTime = 5000;
+    config5.waveHeight = .12;
+    config5.waveAnimate = true;
+    config5.waveCount = 2;
+    config5.waveOffset = 0.25;
+    config5.textSize = 1.2;
+    config5.minValue = 0;
+    config5.maxValue = 100;
+    config5.displayPercent = false;
+        var gauge5 = loadLiquidFillGauge("fillgauge5", 60.44, config5);
+
+
+    function NewValue(){
+        if(Math.random() > .5){
+            return Math.round(Math.random()*100);
+        } else {
+            return (Math.random()*100).toFixed(1);
+        }
+    }
+</script>
+
 
 </body>
 

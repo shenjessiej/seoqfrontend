@@ -91,3 +91,7 @@ footer {
         height: 70%;
     }
 }
+
+#topscores {
+  margin-top: 500px;
+}
