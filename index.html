@@ -19,6 +19,8 @@
     <!-- Custom CSS -->
     <link href="css/modern-business.css" rel="stylesheet">
 
+    <link href="css/seoq.css" rel="stylesheet">
+
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
@@ -68,28 +70,21 @@
     </nav>
 
     <!-- Header Carousel -->
-        <div class = "container" style="margin-top: 50px;" >
+        <div class = "container" style="margin-top: 50px;">
             <div class="row">
-
                 <div class = "col-lg-4">    
                 <svg id="fillgauge5" style="width:100%;height:275px;" onclick="gauge5.update(NewValue());"></svg>
                 </div>
                 
                 <div class = "col-lg-4">     
-                <h2><center>
-                Searched 'www.agileana.com' for 'agile web development'
-                </h2 >
-                    <br>
-                    <br>
-                <h3><center>
+                <h2><center> 
                 You have some work to do!
                     <br>
                     <br>
                 Learn more about your report below
                     <br>
-                </h3>
                 </center>
-                
+                </h2 >
                 </div>
 
                 <div class = "col-lg-4">
@@ -108,29 +103,29 @@
                 
                 </h1>
             </div>
+           
             
-            <div class="col-md-6">     
-                <h2><center> Current Google Rank</h2>
-                    <p><center>This is your current google rank!</p>
-                    <svg id="fillgauge6" style="width:100%;height:200px;" onclick="gauge6.update(NewValue());"></svg>
-                <a href="#" class="btn btn-default">Learn More</a>
+            <div class="col-md-6">
+                
+                        <h2><center> Current Google Rank</h2>
+                        <p><center>This is your current google rank!</p>
+                        <a href="#" class="btn btn-default">Learn More</a>
+          
             </div>
 
+            
             <div class="col-md-6">
-                <h2><center> Keyword Competitiveness</h2>
-                <p><center>The keyword is very competitive</p>
-                <svg id="fillgauge7" style="width:100%;height:200px;" onclick="gauge7.update(NewValue());"></svg>
-                <a href="#" class="btn btn-default">Learn More</a>
+                
+                        <h2><center> Keyword Competitiveness</h2>
+                        <p><center>The keyword is very competitive</p>
+                        <a href="#" class="btn btn-default">Learn More</a>
+          
             </div>
         </div>
         <!-- /.row -->
 
         <!-- Portfolio Section -->
-<<<<<<< HEAD
 
-=======
-       
->>>>>>> origin/master
         
         <div class="row">
         <div align="center">
@@ -148,39 +143,24 @@
 
                 </td>
                 </table>
-            <div class="col-md-4 col-sm-6">
+            </div>
+
+            <div class="factoritem">
+  
                 <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                    <img class="img-factor" src="http://placehold.it/700x500" alt="">
                 </a>
             </div>
-            <div class="col-md-4 col-sm-6">
+
+            <div class="factoritem">
+  
                 <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                    <img class="img-factor" src="http://placehold.it/700x500" alt="">
                 </a>
             </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
+
         </div>
 </div>
-
 
         <!-- /.row -->
 
@@ -218,7 +198,7 @@
     var config5 = liquidFillGaugeDefaultSettings();
     config5.circleThickness = 0.1;
     config5.circleColor = "#6D9EA3";
-    config5.textColor = "#24606D";
+    config5.textColor = "#A7DEEB";
     config5.waveTextColor = "#24606D";
     config5.waveColor = "#A7DEEB";
     config5.textVertPosition = 0.52;
@@ -232,27 +212,7 @@
     config5.maxValue = 100;
     config5.displayPercent = false;
         var gauge5 = loadLiquidFillGauge("fillgauge5", 60.44, config5);
-        
-    var config6 = liquidFillGaugeDefaultSettings();
-    config6.circleThickness = 0.1;
-    config6.circleColor = "#6D9EA3";
-    config6.textColor = "#6D9EA3";
-    config6.waveTextColor = "#24606D";
-    config6.waveColor = "#A7DEEB";
-    config6.textVertPosition = 0.52;
-    config6.waveAnimateTime = 0;
-    config6.waveHeight = 0;
-    config6.waveAnimate = false;
-    config6.waveCount = 0;
-    config6.waveOffset = 0.25;
-    config6.textSize = 1.2;
-    config6.minValue = 0;
-    config6.maxValue = 100;
-    config6.displayPercent = false;
-        var gauge6 = loadLiquidFillGauge("fillgauge6", 60.44, config6);
-        var gauge7 = loadLiquidFillGauge("fillgauge7", 60.44, config6);
 
-<<<<<<< HEAD
     var config6 = liquidFillGaugeDefaultSettings();
     config6.circleThickness = 0.1;
     config6.circleColor = "#6D9EA3";
@@ -270,8 +230,6 @@
     config6.maxValue = 100;
     config6.displayPercent = false;
         var gauge6 = loadLiquidFillGauge("fillgauge6", 60.44, config6);
-=======
->>>>>>> origin/master
     function NewValue(){
         if(Math.random() > .5){
             return Math.round(Math.random()*100);
