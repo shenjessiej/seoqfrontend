@@ -1,7 +1,6 @@
 .factoritem {
   padding: 20px;
   width: 30%;
-  background-color: black !important;
    position: relative;
   min-height: 1px;
   display: inline-block;
@@ -15,6 +14,9 @@
   width: 100%;
 }
 
+.factoritem img {
+  width: 100%;
+}
 
 .factoritem:hover .hiddenpart {
   display: block;
@@ -29,4 +31,8 @@ opacity: .8;
 
 .hiddenpart {
 display: none;
+}
+
+.imagepart:hover {
+width: 30%;
 }
